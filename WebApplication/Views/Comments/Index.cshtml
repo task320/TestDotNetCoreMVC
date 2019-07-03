@@ -1,0 +1,61 @@
+﻿@model WebApplication.Models.CommentsViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+    <title>ASP.Net Core MVC(Linux)</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__page-title">
+            <h1>
+                ASP.Net Core MVC(Linux)
+            </h1>
+        </div>
+    </header>
+    <div class="post">
+        <form asp-controller="Comments" asp-action="Index" method="post">
+            <div class="post__name-area">
+                <div>
+                    @Html.DisplayNameFor(model => model.Content.Name)<br />
+                    <input asp-for="Content.Name" class="post__name">
+                </div>
+                <div>
+                    <span asp-validation-for="Content.Name" class="post__validation-message--error"></span>
+                </div>
+            </div>
+            <div class="post__comment-area">
+                <div>
+                    @Html.DisplayNameFor(model => model.Content.Comment)<br /><input asp-for="Content.Comment" class="post__comment" />
+                </div>
+                <div>
+                    <span asp-validation-for="Content.Comment" class="post__validation-message--error"></span>
+                </div>
+            </div>
+            <div class="post__button-area">
+                <input class="post__submit-button" type="submit" value="投稿">
+            </div>
+        </form>
+    </div>
+    <div class="comments">
+        @foreach (var item in Model.Contents)
+        {
+        <div class="commnets__content">
+            <div class="content__commnet">
+                @item.Comment
+            </div>
+            <div class="content__footer">
+                <span class="content__name">@item.Name</span>
+                <span class="content__date">@item.CreateAt</span>
+            </div>
+        </div>
+        }
+    </div>
+</body>
+</html>
+

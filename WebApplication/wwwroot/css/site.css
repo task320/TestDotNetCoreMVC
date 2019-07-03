@@ -1,0 +1,114 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    padding:20px 0px;
+    background-color: teal;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20);
+    text-align: center;
+}
+
+.header__page-title {
+    color: white;
+    font-size: larger;
+}
+
+.post {
+    width: 300px;
+    margin: 30px auto;
+    padding: 10px;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20);
+}
+.post__name-area {
+    margin: 0px 0px 10px 0px;
+}
+.post__name {
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px solid lightgrey;
+    padding: 0px;
+    margin: 0px;
+    width: 280px;
+}
+.post__name:focus {
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 2px solid teal;
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    width: 280px;
+}
+
+.post__comment-area {
+    margin: 0px 0px 10px 0px;
+}
+.post__comment {
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px solid lightgrey;
+    padding: 0px;
+    margin: 0px;
+    width: 280px;
+}
+
+.post__comment:focus {
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 2px solid teal;
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    width: 280px;
+}
+
+.post__validation-message--error {
+    font-size: small;
+    color: red;
+}
+.post__button-area {
+    text-align:center;
+}
+.post__submit-button {
+    background-color: teal;
+    width: 60px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    border: 0px;
+}
+
+
+.commnets__content {
+    width: 300px;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: teal;
+    color: white;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20);
+}
+.content__commnet{
+    padding:5px;
+}
+.content__footer {
+    text-align: right;
+}
+.content__name {
+    font-size: 12px;
+}
+.content__date {
+    text-align: right;
+    font-size: 12px;
+    color: lightgrey;
+}
