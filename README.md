@@ -7,4 +7,4 @@ docker-composeにて起動できるようにしています。
 - DB:Postgresql
 - HTTPサーバ(リバースプロキシ):nginx
 - Appサーバ:kestrel
-- Webアプリフレームワーク:ASP.Net Core
+- Webアプリフレームワーク:ASP.NET Core
